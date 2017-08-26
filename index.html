@@ -2,51 +2,74 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <title>Tomás Cañibano's Portfolio</title>
 </head>
 <body>
-  <section class="portfolio">
-
-    <header>
-      <section class="logos">
-        <img class="logo" src="images/html.png" />
-        <img class="logo" src="images/css.png" />
-        <img class="logo" src="images/js.png" />
-      </section>
-      <section class="me">
-        <h1>Tomás Cañibano</h1>
-        <p>Web Developer</p>
-      </section>
-    </header>
-
-    <main class="main-content">
-      <section class="main-image">
-        <img src="images/main.jpg" />
-      </section>
-      <h2 class="featured-work">Featured Work</h2>
-      <section class="projects">
-        <article class="project">
-          <a class="project-link" href="https://github.com/">
-            <img src="images/monet.jpg" />
-            <p class="project-name">Monet</p>
-          </a>
-        </article>
-        <article class="project">
-          <a class="project-link" href="https://github.com/">
-            <img src="images/van-gogh.jpg" />
-            <p class="project-name">Van Gogh</p>
-          </a>
-        </article>
-        <article class="project">
-          <a class="project-link" href="https://github.com/">
-            <img src="images/picasso.jpg" />
-            <p class="project-name">Picasso</p>
-          </a>
-        </article>
-      </section>
-    </main>
-
-  </section>
+  <header>
+    <section class="logos">
+      <img class="logo" src="images/html.svg" alt="html 5 logo"/>
+      <img class="logo" src="images/css.svg" alt="css 3 logo"/>
+      <img class="logo" src="images/js.svg" alt="javascript logo"/>
+    </section>
+    <section class="me">
+      <h1>Tomás Cañibano</h1>
+      <p>Web Developer</p>
+    </section>
+  </header>
+  <main class="main-content">
+    <section class="main-image">
+      <picture>
+        <source srcset="images/main-small.jpg" media="(max-width: 600px)">
+        <source srcset="images/main-medium.jpg" media="(max-width: 900px)">
+        <img src="images/main-large.jpg" alt="Source code on a computer screen">
+      </picture>
+    </section>
+    <h2 class="featured-work">Featured Work</h2>
+    <section class="projects">
+      <article class="project">
+        <a class="project-link" href="https://github.com/tomas-cani/goya">
+          <picture class="project-picture">
+            <source srcset="images/goya-small.jpg" media="(max-width: 470px)">
+            <source srcset="images/goya-medium.jpg" media="(max-width: 700px)">
+            <img src="images/goya-large.jpg" alt="A painting by Goya"/>
+          </picture>
+          <h3 class="project-name">Goya</h3>
+        </a>
+      </article>
+      <article class="project">
+        <a class="project-link" href="https://github.com/tomas-cani/monet">
+          <picture>
+            <source srcset="images/monet-small.jpg" media="(max-width: 470px)">
+            <source srcset="images/monet-medium.jpg" media="(max-width: 700px)">
+            <img src="images/monet-large.jpg" alt="A painting by Monet"/>
+          </picture>
+          <h3 class="project-name">Monet</h3>
+        </a>
+      </article>
+      <article class="project">
+        <a class="project-link" href="https://github.com/tomas-cani/van-gogh">
+          <picture>
+            <source srcset="images/van-gogh-small.jpg" media="(max-width: 470px)">
+            <source srcset="images/van-gogh-medium.jpg" media="(max-width: 700px)">
+            <img src="images/van-gogh-large.jpg" alt="A painting by Van Gogh"/>
+          </picture>
+          <h3 class="project-name">Van Gogh</h3>
+        </a>
+      </article>
+      <article class="project">
+        <a class="project-link" href="https://github.com/tomas-cani/picasso">
+          <picture>
+            <source srcset="images/picasso-small.jpg" media="(max-width: 470px)">
+            <source srcset="images/picasso-medium.jpg" media="(max-width: 700px)">
+            <img src="images/picasso-large.jpg" alt="A painting by Picasso"/>
+          </picture>
+          <h3 class="project-name">Picasso</h3>
+        </a>
+      </article>
+    </section>
+  </main>
 </body>
-<html>
+</html>
